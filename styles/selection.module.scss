@@ -1,0 +1,17 @@
+.meal-box {
+	background-color: #fff;
+	border-radius: 25px;
+	cursor: pointer;
+	padding: 10px 6px;
+
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+	&_image {
+	}
+
+	&_name {
+		font-size: 0.8rem;
+	}
+}

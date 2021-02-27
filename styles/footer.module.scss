@@ -1,0 +1,9 @@
+@import "./_constants";
+
+.footer {
+	height: $FOOTER_DEFAULT;
+	font-size: 0.9rem;
+	font-weight: 600;
+	text-align: center;
+	color: #000;
+}
