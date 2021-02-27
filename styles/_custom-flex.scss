@@ -25,6 +25,15 @@
 	}
 }
 
+.flex-flow {
+	&_row {
+		flex-flow: row wrap;
+	}
+	&_col {
+		flex-flow: column wrap;
+	}
+}
+
 .self-center {
 	align-self: center;
 }
