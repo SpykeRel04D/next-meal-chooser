@@ -1,5 +1,6 @@
 @import "./_constants";
 @import "./_custom-flex";
+@import "./mq";
 
 html,
 body,
@@ -12,12 +13,32 @@ body,
 	font-family: "Roboto", sans-serif;
 }
 
+html,
+body,
+#__next {
+	@include rwd(all-desktop) {
+		border: 3px solid #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.full-height {
+	max-height: 600px;
+}
+
 h1 {
 	color: #fff;
 	font-size: 2.5rem;
 	font-family: "Luckiest Guy", cursive;
 	text-align: center;
 	text-shadow: -5px -5px 0 #1a1a1a, 5px -5px 0 #1a1a1a, -5px 5px 0 #1a1a1a, 5px 5px 0 #1a1a1a;
+
+	@include rwd(all-desktop) {
+		font-size: 5.5rem;
+		margin: 0;
+	}
 }
 
 a {
@@ -46,6 +67,10 @@ a {
 	margin: 0 auto;
 	width: 100%;
 	min-height: calc(100% - #{$HEADER_DEFAULT} - #{$FOOTER_DEFAULT});
+
+	@include rwd(all-desktop) {
+		font-size: 1.25rem;
+	}
 }
 
 .button {
