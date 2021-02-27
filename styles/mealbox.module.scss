@@ -21,4 +21,12 @@
 		font-weight: 600;
 		margin: 0px 6px;
 	}
+
+	&:hover {
+		background-color: #ddd;
+	}
+}
+
+.selected {
+	background-color: #ccc;
 }
