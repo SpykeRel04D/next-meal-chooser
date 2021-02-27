@@ -9,9 +9,12 @@
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 
 	&_image {
+		width: 100px;
+		height: 100px;
 	}
 
 	&_name {
-		font-size: 0.8rem;
+		font-size: 1rem;
+		font-weight: 600;
 	}
 }
