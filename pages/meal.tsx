@@ -12,6 +12,7 @@ export default function Selection() {
 	const [meals, setMeals] = useState(null);
 	const [selection, setSelection] = useState([]);
 	const [countdown, setCountDown] = useState<number | null>(null);
+	const [result, setResult] = useState<number | null>(null);
 
 	const toogleSelection = (index) => {
 		let newArr = [...selection];
@@ -20,8 +21,12 @@ export default function Selection() {
 	};
 
 	const randomizeMeal = () => {
-		setEventState("countdown");
-		setCountDown(3);
+		let selections = selection.reduce((total, x) => (x == true ? total + 1 : total), 0);
+		if (selections < 2) alert("You have to choice at least two meals!");
+		else {
+			setEventState("countdown");
+			setCountDown(3);
+		}
 	};
 
 	useEffect(() => {
@@ -41,6 +46,11 @@ export default function Selection() {
 					setCountDown(countdown - 1);
 				}, 1000);
 			} else {
+				let mealArray = [];
+				selection.map((choice, index) => {
+					if (choice) mealArray.push(index);
+				});
+				setResult(mealArray[Math.floor(Math.random() * mealArray.length)]);
 				setEventState("result");
 			}
 		}
@@ -73,15 +83,16 @@ export default function Selection() {
 					<span className={styles.countdown}>{countdown}</span>
 				</>
 			)}
-			{eventState === "result" && (
+			{eventState === "result" && result !== null && (
 				<>
 					<div className={`${styles["result-card"]} flex flex-direction_col flex-centering_items`}>
-						<h2 className={styles["result-card_name"]}>Meal Name</h2>
-						<img className={styles["result-card_image"]} src={`/meals/burger.png`} />
-						<p className={styles["result-card_introduction"]}>
-							Officia ut reprehenderit eu Lorem est occaecat sunt ullamco magna aliquip cillum esse do.
-						</p>
+						<h2 className={styles["result-card_name"]}>{meals[result].name}</h2>
+						<img className={styles["result-card_image"]} src={`/meals/${meals[result].image}.png`} />
+						<p className={styles["result-card_introduction"]}>{meals[result].winner}</p>
 					</div>
+					<Link href="/">
+						<a className="button">Restart</a>
+					</Link>
 				</>
 			)}
 		</MainLayout>
