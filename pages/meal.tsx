@@ -75,10 +75,12 @@ export default function Selection() {
 			)}
 			{eventState === "result" && (
 				<>
-					<div className={styles["result-card"]}>
-						<h2>Meal Name</h2>
-						<img src={`/meals/burger.png`} />
-						<p>Officia ut reprehenderit eu Lorem est occaecat sunt ullamco magna aliquip cillum esse do.</p>
+					<div className={`${styles["result-card"]} flex flex-direction_col flex-centering_items`}>
+						<h2 className={styles["result-card_name"]}>Meal Name</h2>
+						<img className={styles["result-card_image"]} src={`/meals/burger.png`} />
+						<p className={styles["result-card_introduction"]}>
+							Officia ut reprehenderit eu Lorem est occaecat sunt ullamco magna aliquip cillum esse do.
+						</p>
 					</div>
 				</>
 			)}
