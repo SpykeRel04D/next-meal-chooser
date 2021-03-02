@@ -2,32 +2,37 @@ const meals = [
 	{
 		name: "Burger",
 		image: "Burger",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "First, we eat. Then, we do everything else.",
 	},
 	{
 		name: "Combined Dish",
 		image: "Combined_Dish",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "Hunger is a good cook.",
 	},
 	{
 		name: "Fast Food",
 		image: "Fast_Food",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "Never eat more than you can lift.",
 	},
 	{
 		name: "Hot Dog",
 		image: "Hot_Dog",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "Live, love, eat.",
 	},
 	{
 		name: "Indian Food",
 		image: "Indian_Food",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "This is a festival of flavors.",
 	},
 	{
 		name: "Japanese Food",
 		image: "Japanese_Food",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "In the mood for noods.",
+	},
+	{
+		name: "Kebab",
+		image: "Kebab",
+		winner: "What diet?",
 	},
 	{
 		name: "Skip meal. I want to Drink!",
@@ -37,37 +42,37 @@ const meals = [
 	{
 		name: "Mexican Food",
 		image: "Mexican_Food",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "One does not need silver cutlery to eat delectable food.",
 	},
 	{
 		name: "Pizza",
 		image: "Pizza",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "A little slice of heaven.",
 	},
 	{
 		name: "Sandwiches",
 		image: "Sandwiches",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "Eat today, live another day.",
 	},
 	{
 		name: "Seafood",
 		image: "Seafood",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "Dinner is one of life’s greatest pleasures.",
 	},
 	{
 		name: "Snack",
 		image: "Snack",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "Another one bites the crust.",
 	},
 	{
 		name: "Sushi",
 		image: "Sushi",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "A day is best started on a full stomach.",
 	},
 	{
 		name: "Vegetarian Food",
 		image: "Vegetarian_Food",
-		winner: "Winner, Winner Chicken Dinner",
+		winner: "I’m soy into you.",
 	},
 ];
 
